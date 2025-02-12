@@ -3,27 +3,23 @@ function createHeart() {
   heart.classList.add("heart");
   heart.innerHTML = "❤️"; // Emoji for heart
 
-  // Randomize the position (left) and fall speed (animation duration)
-  heart.style.left = Math.random() * 100 + "vw"; // Random horizontal position across the viewport width
-  heart.style.animationDuration = Math.random() * 3 + 2 + "s"; // Random fall speed (between 2s to 5s)
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = Math.random() * 3 + 2 + "s";
 
-  // Add the heart to the body of the document
   document.body.appendChild(heart);
 
-  // Remove the heart after the animation ends (5 seconds)
   setTimeout(() => {
     heart.remove();
-  }, 5000); // Matches the animation duration (5 seconds)
+  }, 5000);
 }
 
-// Create hearts every 500ms (0.5 seconds)
 setInterval(createHeart, 500);
 
 let yes = document.querySelector(".yes");
 let no = document.querySelector(".no");
 
 yes.addEventListener("click", function () {
-  window.location.href = "yess.html"; // Change URL as needed
+  window.location.href = "yess.html";
 });
 
 let w = 90;
