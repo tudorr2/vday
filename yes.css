@@ -31,6 +31,15 @@
   margin: 120px;
 }
 
+#aimg {
+  width: 250px;
+  height: 390px;
+}
+#jimg {
+  width: 250px;
+  height: 390px;
+}
+
 #main {
   display: flex;
   justify-content: center;
