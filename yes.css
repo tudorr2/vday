@@ -1,0 +1,35 @@
+* {
+  background-color: #f7cacd;
+  margin: 0;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+#img {
+  display: flex;
+  justify-content: center;
+  margin: 120px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
