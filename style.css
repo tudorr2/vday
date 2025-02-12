@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Galindo&display=swap");
+
 * {
   background-color: #f7cacd;
   margin: 0;
   overflow: hidden;
+  font-family: "Galindo", serif;
 }
 
 .heart {
